@@ -184,7 +184,7 @@
     <div class="photo-grid">
       <div class="photo" style="--rotate: 0.2;">
         <img src="man1.jpg" alt="foto1" />
-        <div class="caption">12 april 2025 - Pantai tanjung pasir/div>
+        <div class="caption">12 april 2025 - Pantai tanjung pasir</div>
       </div>
       <div class="photo" style="--rotate: -0.2;">
         <img src="man2.jpg" alt="foto2" />
