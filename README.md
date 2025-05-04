@@ -184,15 +184,15 @@
     <div class="photo-grid">
       <div class="photo" style="--rotate: 0.2;">
         <img src="man1.jpg" alt="foto1" />
-        <div class="caption">12 Jan 2023 - Taman Kota</div>
+        <div class="caption">12 april 2025 - Pantai tanjung pasir/div>
       </div>
       <div class="photo" style="--rotate: -0.2;">
         <img src="man2.jpg" alt="foto2" />
-        <div class="caption">20 Feb 2023 - Nonton Bareng</div>
+        <div class="caption">10 November 2024 -  Hari Pahlawan</div>
       </div>
       <div class="photo" style="--rotate: 0;">
         <img src="man3.jpg" />
-        <div class="caption">5 Mar 2023 - Makan Es Krim</div>
+        <div class="caption"> 27 Mar 2024 - Mountain date</div>
       </div>
     </div>
 
