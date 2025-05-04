@@ -1,4 +1,3 @@
-
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
@@ -30,7 +29,7 @@
     }
 
     .question {
-      margin: 10px 0;
+      margin: 20px 0;
       background-color: #add8e6;
       padding: 20px;
       border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
@@ -97,8 +96,8 @@
       background-color: #f0f8ff;
       display: inline-block;
       padding: 15px 20px;
-      border-radius: 16px;
-      border: 3px solid #00bfff;
+      border-radius: 19px;
+      border: 5px solid #00bfff;
       margin: 10px 0;
       animation: fadeIn 2s ease;
       box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
@@ -158,17 +157,17 @@
 <body>
   <div class="gate" id="gate">
     <div class="question">
-      <p>1. Apakah sudah mendapatkan izin dari orangnya?</p>
+      <p>  Apakah sudah mendapatkan izin dari orangnya?</p>
       <button class="button" onclick="checkGate(1, true)">Ya</button>
       <button class="button" onclick="checkGate(1, false)">Tidak</button>
     </div>
     <div class="question hidden">
-      <p>2. Apakah kamu mantan pacar si cowo?</p>
+      <p>  Apakah kamu mantan pacar si cowo?</p>
       <button class="button" onclick="checkGate(2, true)">Ya</button>
       <button class="button" onclick="checkGate(2, false)">Tidak</button>
     </div>
     <div class="question hidden">
-      <p>3. Kepo banget ya?</p>
+      <p>  Kepo banget ya?</p>
       <button class="button" onclick="checkGate(3, true)">Iya banget</button>
       <button class="button" onclick="checkGate(3, false)">Biasa aja</button>
     </div>
@@ -184,15 +183,15 @@
     <div class="photo-grid">
       <div class="photo" style="--rotate: 0.2;">
         <img src="man1.jpg" alt="foto1" />
-        <div class="caption">12 april 2025 - Pantai tanjung pasir</div>
+        <div class="caption">10 april 2025 - beach date</div>
       </div>
       <div class="photo" style="--rotate: -0.2;">
         <img src="man2.jpg" alt="foto2" />
-        <div class="caption">10 November 2024 -  Hari Pahlawan</div>
+        <div class="caption">20 november 2025 - cosplay junior</div>
       </div>
       <div class="photo" style="--rotate: 0;">
         <img src="man3.jpg" />
-        <div class="caption"> 27 Mar 2024 - Mountain date</div>
+        <div class="caption">5 Mar 2024 - Mountain date</div>
       </div>
     </div>
 
