@@ -4,10 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kenangan Lucu Bareng Pacar</title>
+  <!-- Link ke Google Font Comic Neue -->
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Comic Sans MS', cursive;
+      font-family: 'Comic Neue', cursive;
       background: url('naila.jpg') center/cover no-repeat;
       overflow-x: hidden;
       transition: background 2s ease;
@@ -235,4 +237,3 @@
     }
   </script>
 </body>
-</html
