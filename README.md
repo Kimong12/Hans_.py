@@ -31,13 +31,15 @@
       margin: 20px 0;
       background-color: #add8e6;
       padding: 20px;
-      border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
+      border-radius: 20px;
       text-align: center;
       color: black;
-      max-width: 90%;
+      width: 100%;
+      max-width: 500px;
       animation: fadeIn 1s ease;
       word-break: break-word;
-      white-space: normal;
+      box-sizing: border-box;
+      font-size: 18px;
     }
 
     .button-group {
@@ -56,6 +58,7 @@
       background-color: #FFFFD0;
       color: black;
       cursor: pointer;
+      font-size: 16px;
     }
 
     .falling-hearts {
@@ -93,7 +96,7 @@
 
     .content {
       position: relative;
-      padding: 10px;
+      padding: 20px;
       z-index: 1;
       min-height: 100vh;
       animation: slideUp 1s ease forwards;
@@ -112,6 +115,7 @@
       box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
       word-break: break-word;
       white-space: normal;
+      font-size: 16px;
     }
 
     .photo-grid {
@@ -162,29 +166,45 @@
       font-weight: bold;
       margin-top: 30px;
     }
+
+    @media (max-width: 480px) {
+      .question {
+        font-size: 16px;
+        padding: 15px;
+      }
+
+      .button {
+        font-size: 14px;
+        padding: 10px 15px;
+      }
+
+      .text-box {
+        font-size: 15px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="gate" id="gate">
     <div class="question">
-      <p>Apakah sudah mendapatkan izin dari orangnya?</p>
+      Udah dapet izin dari yang punya foto ini belum?
       <div class="button-group">
-        <button class="button" onclick="checkGate(1, true)">Ya</button>
-        <button class="button" onclick="checkGate(1, false)">Tidak</button>
+        <button class="button" onclick="checkGate(1, true)">Udah dong</button>
+        <button class="button" onclick="checkGate(1, false)">Belum sih</button>
       </div>
     </div>
     <div class="question hidden">
-      <p>Apakah kamu mantan pacar si cowo?</p>
+      Kamu mantannya dia ya?
       <div class="button-group">
-        <button class="button" onclick="checkGate(2, true)">Ya</button>
-        <button class="button" onclick="checkGate(2, false)">Tidak</button>
+        <button class="button" onclick="checkGate(2, true)">Iya hehe</button>
+        <button class="button" onclick="checkGate(2, false)">Bukan kok</button>
       </div>
     </div>
     <div class="question hidden">
-      <p>Kepo banget ya?</p>
+      Wih, kepo amat sih?
       <div class="button-group">
-        <button class="button" onclick="checkGate(3, true)">Iya banget</button>
-        <button class="button" onclick="checkGate(3, false)">Biasa aja</button>
+        <button class="button" onclick="checkGate(3, true)">Iyalah wkwk</button>
+        <button class="button" onclick="checkGate(3, false)">Enggak juga sih</button>
       </div>
     </div>
   </div>
@@ -192,22 +212,22 @@
   <div class="falling-hearts" id="hearts"></div>
 
   <div class="content hidden" id="content">
-    <h2 class="text-box">Hai semuanya kalian kenapa si kepo bngt!!!</h2>
+    <h2 class="text-box">Yaaa ampun kepo banget si kalian wkwk!</h2>
     <p class="text-box">Tanggal Jadian: 29 September 2023</p>
-    <p class="text-box">Tanggal Nikah (Aamiin!): 29 september 2032</p>
+    <p class="text-box">Target Nikah (Aamiin!): 29 September 2032</p>
 
     <div class="photo-grid">
       <div class="photo" style="--rotate: 0.2;">
         <img src="man1.jpg" alt="foto1" />
-        <div class="caption">10 april 2025 - beach date</div>
+        <div class="caption">10 April 2025 - Main ke pantai</div>
       </div>
       <div class="photo" style="--rotate: -0.2;">
         <img src="man2.jpg" alt="foto2" />
-        <div class="caption">20 november 2025 - cosplay junior</div>
+        <div class="caption">20 November 2025 - Cosplay bareng</div>
       </div>
       <div class="photo" style="--rotate: 0;">
         <img src="man3.jpg" />
-        <div class="caption">5 Mar 2024 - Mountain date</div>
+        <div class="caption">5 Maret 2024 - Jalan ke gunung</div>
       </div>
     </div>
 
@@ -223,7 +243,7 @@
     function checkGate(step, answer) {
       const questions = document.querySelectorAll('.question');
       if (!answer) {
-        alert("Maaf, kamu tidak bisa mengakses halaman ini.");
+        alert("Duh, maaf ya... nggak bisa lanjut.");
         return;
       }
       questions[currentStep].classList.add('hidden');
@@ -231,7 +251,7 @@
       if (currentStep < questions.length) {
         setTimeout(() => {
           questions[currentStep].classList.remove('hidden');
-        }, 700);
+        }, 500);
       } else {
         document.getElementById('gate').classList.add('hidden');
         document.getElementById('content').classList.remove('hidden');
@@ -252,4 +272,3 @@
     }
   </script>
 </body>
-</html>
