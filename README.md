@@ -3,13 +3,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kenangan Lucu Bareng Pacar</title>
-  <!-- Link ke Google Font Comic Neue -->
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Comic Neue', cursive;
-      background: url('naila.jpg') center/cover no-repeat;
+      background: url('naila.jpg') center top / cover no-repeat;
       overflow-x: hidden;
       transition: background 2s ease;
     }
@@ -37,6 +36,16 @@
       color: black;
       max-width: 90%;
       animation: fadeIn 1s ease;
+      word-break: break-word;
+      white-space: normal;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
     }
 
     .button {
@@ -88,7 +97,7 @@
       z-index: 1;
       min-height: 100vh;
       animation: slideUp 1s ease forwards;
-      background: url('Begron2.png') center/cover no-repeat;
+      background: url('Begron2.png') center top / cover no-repeat;
       color: black;
     }
 
@@ -101,6 +110,8 @@
       margin: 10px 0;
       animation: fadeIn 2s ease;
       box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      word-break: break-word;
+      white-space: normal;
     }
 
     .photo-grid {
@@ -151,25 +162,30 @@
       font-weight: bold;
       margin-top: 30px;
     }
-
   </style>
 </head>
 <body>
   <div class="gate" id="gate">
     <div class="question">
-      <p>  Apakah sudah mendapatkan izin dari orangnya?</p>
-      <button class="button" onclick="checkGate(1, true)">Ya</button>
-      <button class="button" onclick="checkGate(1, false)">Tidak</button>
+      <p>Apakah sudah mendapatkan izin dari orangnya?</p>
+      <div class="button-group">
+        <button class="button" onclick="checkGate(1, true)">Ya</button>
+        <button class="button" onclick="checkGate(1, false)">Tidak</button>
+      </div>
     </div>
     <div class="question hidden">
-      <p>  Apakah kamu mantan pacar si cowo?</p>
-      <button class="button" onclick="checkGate(2, true)">Ya</button>
-      <button class="button" onclick="checkGate(2, false)">Tidak</button>
+      <p>Apakah kamu mantan pacar si cowo?</p>
+      <div class="button-group">
+        <button class="button" onclick="checkGate(2, true)">Ya</button>
+        <button class="button" onclick="checkGate(2, false)">Tidak</button>
+      </div>
     </div>
     <div class="question hidden">
-      <p>  Kepo banget ya?</p>
-      <button class="button" onclick="checkGate(3, true)">Iya banget</button>
-      <button class="button" onclick="checkGate(3, false)">Biasa aja</button>
+      <p>Kepo banget ya?</p>
+      <div class="button-group">
+        <button class="button" onclick="checkGate(3, true)">Iya banget</button>
+        <button class="button" onclick="checkGate(3, false)">Biasa aja</button>
+      </div>
     </div>
   </div>
 
@@ -236,3 +252,4 @@
     }
   </script>
 </body>
+</html>
